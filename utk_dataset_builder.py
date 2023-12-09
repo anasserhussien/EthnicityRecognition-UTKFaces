@@ -76,11 +76,12 @@ train_dataset, val_dataset, test_dataset = random_split(dataset, [train_size, va
 #%% Copy each individual image into corresponding split and label directory
 
 os.makedirs(UTK_DIST, exist_ok=True)
-for ds in [train_dataset, val_dataset, test_dataset]:
+for ds, split in zip([train_dataset, val_dataset, test_dataset], ['train', 'val', 'test']):
 
+    os.makedirs(os.path.join(UTK_DIST, split), exist_ok=True)
     for i in range(len(ds)):
         _, label, img_path = ds.__getitem__(i)
 
-        dist = os.path.join(UTK_DIST, str(label))
+        dist = os.path.join(UTK_DIST, split, str(label))
         os.makedirs(dist, exist_ok=True)
         shutil.copy(img_path, dist)
