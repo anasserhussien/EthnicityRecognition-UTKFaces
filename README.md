@@ -50,3 +50,10 @@ Follow these steps:
         | 1     | Black       |
         | 2     | Asian       |
         | 3     | Indian      |
+
+    Dataset distribution:
+        <p float="left">
+            <img src="visualizations/train_dist.png" width="32%"/>
+            <img src="visualizations/val_dist.png" width="32%"/>
+            <img src="visualizations/test_dist.png" width="32%"/>
+        </p>
