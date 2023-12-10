@@ -57,3 +57,34 @@ Follow these steps:
             <img src="visualizations/val_dist.png" width="32%"/>
             <img src="visualizations/test_dist.png" width="32%"/>
         </p>
+
+4. Model training:
+
+    ```bash
+    python train.py
+    ```
+
+
+    Model Training Configurations:
+
+        Maximum Epochs (MAX_EPOCHS): 30
+        Batch Size (BATCH_SIZE): 64
+        Learning Rate (LR): 0.001
+        Optimizer: Adam
+        Model Architecture: Non-pretrained ResNet-18
+        Data splits:
+            60% training
+            20% validation
+            20% testing 
+
+5. Evaluation and Results:
+
+    __Accuracy of the model on the test set: 88.261 %__
+    
+    The model is available under `/checkpoints` directory.
+
+    <p float="left">
+        <img src="visualizations/validation_loss.png" width="32%"/>
+        <img src="visualizations/test_confusion_matrix.png" width="32%"/>
+        <img src="visualizations/test_confusion_matrix_percentage.png" width="32%"/>
+    </p>
