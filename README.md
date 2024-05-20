@@ -81,7 +81,7 @@ Follow these steps:
 
     __Accuracy of the model on the test set: 88.261 %__
     
-    The model is available under `/checkpoints` directory.
+    The model is available @ https://shorturl.at/3vRuj .
 
     <p float="left">
         <img src="visualizations/validation_loss.png" width="32%"/>
